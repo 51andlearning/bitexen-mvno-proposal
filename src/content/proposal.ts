@@ -561,7 +561,7 @@ export const revenueModel = {
   bottomLine: {
     title: "The strategic advantage",
     points: [
-      "2M+ active users with existing digital relationship — MVNO adds recurring revenue immediately",
+      "A proven playbook for hyper growth to acquire over 2M+ active users",
       "Direct billing relationships replace one-time trading fees with predictable subscriber income",
       "Fintech exclusivity creates a moat no MNO or traditional MVNO can replicate",
       "Segmented go-to-market across mass traders, premium investors, youth starters, and merchants",
