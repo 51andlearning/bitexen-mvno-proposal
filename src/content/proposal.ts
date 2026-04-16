@@ -575,7 +575,7 @@ export const commercialModel = {
   subtitle:
     "Digital Mobile carries much of the build. Bitexen carries the brand. Revenue is split 50/50 on net profit.",
   highlights: [
-    { metric: "R0", label: "Upfront capex from Bitexen", description: "Digital Mobile carries the full platform build, integration, and launch investment." },
+    { metric: "R250k", label: "Upfront capex from Bitexen", description: "Digital Mobile carries the full platform build, integration, and launch investment." },
     { metric: "50 / 50", label: "Net profit share", description: "After Digital Mobile's build loan account is settled, profit is split equally." },
     { metric: "19.1%", label: "Blended gross margin", description: "Blended across all four tiers at modelled subscriber mix (40/30/20/10)." },
     { metric: "R127", label: "Blended ARPU (ex VAT)", description: "Weighted average across Starter (40%), Trader (30%), Pro (20%), Elite (10%)." },
