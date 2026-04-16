@@ -650,7 +650,7 @@ export const cta = {
   },
   secondary: {
     label: "Download the deck",
-    href: "#",
+    href: "/Bitexen-MVNO-Executive-Deck.pptx",
   },
   workstreams: [
     "SA entity formation and regulatory engagement (ICASA licensing)",
