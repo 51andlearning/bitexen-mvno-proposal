@@ -267,7 +267,7 @@ export const cryptoRewards = {
     },
     {
       label: "The BTXN Token Advantage",
-      body: "Bitexen's native utility token creates a unique loyalty flywheel. Monthly BTXN airdrops (5–50 tokens by tier), staking APY bonuses up to +1.5%, and trading fee discounts up to 25% — all exclusive to MVNO subscribers.",
+      body: "Bitexen's native utility token creates a unique loyalty flywheel. Monthly BTXN airdrops, staking APY bonuses up to +1.5%, and trading fee discounts up to 25% — all exclusive to MVNO subscribers.",
     },
   ],
   features: [
