@@ -21,7 +21,7 @@ export const executiveSummary = {
       "Fiat On/Off Ramp",
       "Merchant Network",
       "Referral Programme",
-      "Social Media (2M+)",
+      "Social Media",
       "Partner Merchants",
       "Staking Platform",
       "BTXN Token Ecosystem",
