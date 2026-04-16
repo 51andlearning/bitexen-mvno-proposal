@@ -42,7 +42,7 @@ export default function SiteHeader() {
             width={964}
             height={620}
             priority
-            className="mb-[-3px] hidden h-8 w-auto sm:block"
+            className="mb-[-6px] hidden h-8 w-auto sm:block"
           />
         </a>
         <ContactDialog
