@@ -588,6 +588,39 @@ export const commercialModel = {
     { item: "Logistics (SIM delivery)", who: "Digital Mobile", cost: "R40 per delivery" },
     { item: "Bitexen brand + marketing", who: "Bitexen", cost: "Bitexen TBC" },
   ],
+  profitAndLoss: {
+    title: "Simplified P&L per subscriber (blended)",
+    note: "Based on modelled subscriber mix: Starter 40%, Trader 30%, Pro 20%, Elite 10%. All figures ex VAT.",
+    rows: [
+      { label: "Blended ARPU", value: "R126.96", type: "revenue" },
+      { label: "Data wholesale cost", value: "(R53.27)", type: "cost" },
+      { label: "Voice wholesale cost", value: "(R10.07)", type: "cost" },
+      { label: "SMS wholesale cost", value: "(R7.04)", type: "cost" },
+      { label: "Zero-rated Bitexen app data", value: "(R6.89)", type: "cost" },
+      { label: "Trading reward data (avg)", value: "(R19.33)", type: "cost" },
+      { label: "SIM card cost", value: "(R6.50)", type: "cost" },
+      { label: "Total wholesale cost", value: "(R102.71)", type: "subtotal" },
+      { label: "Gross margin per sub", value: "R24.25", type: "profit" },
+      { label: "Gross margin %", value: "19.1%", type: "margin" },
+    ],
+    tiers: [
+      { name: "Starter", price: "R79", margin: "17.8%", mix: "40%" },
+      { name: "Trader", price: "R149", margin: "15.9%", mix: "30%" },
+      { name: "Pro", price: "R199", margin: "23.0%", mix: "20%" },
+      { name: "Elite", price: "R299", margin: "20.1%", mix: "10%" },
+    ],
+    annualProjection: {
+      title: "5-Year Annualised P&L Projection",
+      note: "Assumes linear subscriber growth to 300k by Year 5, blended ARPU R127 ex VAT, 19.1% blended gross margin. Platform fee R75k/mo or R7.50/sub (whichever higher). 50/50 net profit share after platform costs.",
+      years: [
+        { year: "Year 1", subs: "25,000", revenue: "R38.1M", wholesaleCost: "R30.8M", grossProfit: "R7.3M", platformFee: "R2.3M", netProfit: "R5.0M", perParty: "R2.5M" },
+        { year: "Year 2", subs: "75,000", revenue: "R114.3M", wholesaleCost: "R92.4M", grossProfit: "R21.8M", platformFee: "R6.8M", netProfit: "R15.1M", perParty: "R7.5M" },
+        { year: "Year 3", subs: "150,000", revenue: "R228.5M", wholesaleCost: "R184.9M", grossProfit: "R43.7M", platformFee: "R13.5M", netProfit: "R30.2M", perParty: "R15.1M" },
+        { year: "Year 4", subs: "225,000", revenue: "R342.8M", wholesaleCost: "R277.3M", grossProfit: "R65.5M", platformFee: "R20.3M", netProfit: "R45.3M", perParty: "R22.6M" },
+        { year: "Year 5", subs: "300,000", revenue: "R457.0M", wholesaleCost: "R369.8M", grossProfit: "R87.3M", platformFee: "R27.0M", netProfit: "R60.3M", perParty: "R30.2M" },
+      ],
+    },
+  },
 };
 
 export const implementationRoadmap = {
