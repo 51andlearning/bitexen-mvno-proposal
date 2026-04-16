@@ -12,7 +12,7 @@ export const executiveSummary = {
   ],
   touchpoints: {
     title: "Every Bitexen touchpoint becomes a subscriber funnel",
-    body: "Monetise existing digital users across crypto, trading, and fintech channels — no new customer acquisition required.",
+    body: "Monetise digital users across crypto, trading, and fintech channels.",
     items: [
       "Bitexen Exchange",
       "Bitexen Mobile App",
