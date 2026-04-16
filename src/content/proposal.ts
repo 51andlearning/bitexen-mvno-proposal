@@ -581,7 +581,7 @@ export const commercialModel = {
     { metric: "R127", label: "Blended ARPU (ex VAT)", description: "Weighted average across Starter (40%), Trader (30%), Pro (20%), Elite (10%)." },
   ],
   costStructure: [
-    { item: "MVNO platform deployment", who: "Digital Mobile", cost: "R0 to Bitexen" },
+    { item: "MVNO platform deployment", who: "Digital Mobile", cost: "R250k to Bitexen" },
     { item: "Monthly platform fee", who: "Digital Mobile", cost: "R75k or R7.50/active sub (higher)" },
     { item: "Contact centre (CXG)", who: "Digital Mobile", cost: "Managed service" },
     { item: "SIM cards + Paperless RICA", who: "Digital Mobile", cost: "R20 per SIM activation" },
