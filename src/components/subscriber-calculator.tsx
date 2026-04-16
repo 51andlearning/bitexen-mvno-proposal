@@ -21,32 +21,32 @@ function fmtSubs(n: number): string {
   return `${n}`;
 }
 
-// Snap points for the slider
-const SNAPS = [
+// Fixed steps the slider snaps to — the slider has N discrete positions
+const STEPS = [
   0, 5_000, 10_000, 25_000, 50_000, 75_000, 100_000, 150_000, 200_000,
   250_000, 300_000, 500_000, 750_000, 1_000_000, 2_000_000, 3_000_000,
   5_000_000, 7_500_000, 10_000_000,
 ];
 
-function snapToNearest(val: number): number {
-  let closest = SNAPS[0];
-  let minDist = Math.abs(val - closest);
-  for (const s of SNAPS) {
-    const d = Math.abs(val - s);
-    if (d < minDist) {
-      minDist = d;
-      closest = s;
-    }
-  }
-  return closest;
-}
+// Scale labels with their step index so they position correctly
+const LABELS: { text: string; index: number }[] = [
+  { text: "0", index: 0 },
+  { text: "100k", index: 6 },
+  { text: "500k", index: 11 },
+  { text: "1M", index: 13 },
+  { text: "5M", index: 16 },
+  { text: "10M", index: 18 },
+];
+
+const MAX_INDEX = STEPS.length - 1;
 
 export default function SubscriberCalculator() {
-  const [subs, setSubs] = useState(100_000);
+  const [stepIndex, setStepIndex] = useState(6); // default 100k
+
+  const subs = STEPS[stepIndex];
 
   const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const raw = Number(e.target.value);
-    setSubs(snapToNearest(raw));
+    setStepIndex(Number(e.target.value));
   }, []);
 
   // Annual calculations
@@ -69,8 +69,7 @@ export default function SubscriberCalculator() {
     { label: "Per Party (50/50)", value: fmt(Math.max(annualPerParty, 0)), color: "font-bold text-emerald-600" },
   ];
 
-  // Slider percentage for the track fill
-  const pct = (subs / 10_000_000) * 100;
+  const pct = (stepIndex / MAX_INDEX) * 100;
 
   return (
     <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -101,19 +100,23 @@ export default function SubscriberCalculator() {
           <input
             type="range"
             min={0}
-            max={10_000_000}
-            step={1000}
-            value={subs}
+            max={MAX_INDEX}
+            step={1}
+            value={stepIndex}
             onChange={handleChange}
             className="absolute inset-0 h-2 w-full cursor-pointer appearance-none bg-transparent [&::-moz-range-thumb]:h-5 [&::-moz-range-thumb]:w-5 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-2 [&::-moz-range-thumb]:border-[#0EA5E9] [&::-moz-range-thumb]:bg-white [&::-moz-range-thumb]:shadow-[0_2px_8px_rgba(14,165,233,0.3)] [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-[#0EA5E9] [&::-webkit-slider-thumb]:bg-white [&::-webkit-slider-thumb]:shadow-[0_2px_8px_rgba(14,165,233,0.3)]"
           />
-          <div className="mt-2 flex justify-between text-[10px] text-slate-400">
-            <span>0</span>
-            <span>100k</span>
-            <span>500k</span>
-            <span>1M</span>
-            <span>5M</span>
-            <span>10M</span>
+          {/* Labels positioned to match their snap-point positions */}
+          <div className="relative mt-2 h-4">
+            {LABELS.map((l) => (
+              <span
+                key={l.text}
+                className="absolute -translate-x-1/2 text-[10px] text-slate-400"
+                style={{ left: `${(l.index / MAX_INDEX) * 100}%` }}
+              >
+                {l.text}
+              </span>
+            ))}
           </div>
         </div>
 
