@@ -1,4 +1,5 @@
 import { commercialModel } from "@/content/proposal";
+import SubscriberCalculator from "@/components/subscriber-calculator";
 
 export default function CommercialModel() {
   return (
@@ -195,6 +196,9 @@ export default function CommercialModel() {
           <span className="font-semibold text-slate-700">Projection note:</span>{" "}
           {commercialModel.profitAndLoss.annualProjection.note}
         </p>
+
+        {/* Interactive subscriber calculator */}
+        <SubscriberCalculator />
       </div>
     </section>
   );
