@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Bitexen — Fintech MVNO Proposal | Digital Mobile",
+  title: "Bitexen Fintech MVNO · Proposal",
   description:
-    "Confidential proposal for a fintech-led MVNO in South Africa, prepared by Digital Solutions Group for Bitexen Teknoloji A.S.",
+    "A fintech-led MVNO leveraging Bitexen's cryptocurrency exchange, 2M+ active users, and digital wallet ecosystem — unlike anything in Africa.",
 };
 
 export default function RootLayout({
@@ -26,9 +21,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-white font-sans text-[#0F172A]">
+        {children}
+      </body>
     </html>
   );
 }
