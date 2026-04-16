@@ -30,7 +30,7 @@ export default function SiteHeader() {
             width={600}
             height={236}
             priority
-            className="h-10 w-auto"
+            className="mt-[3px] h-10 w-auto"
           />
           <span
             aria-hidden
