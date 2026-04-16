@@ -571,7 +571,7 @@ export const revenueModel = {
 
 export const commercialModel = {
   eyebrow: "Commercial Model",
-  title: "Zero upfront. Pure revenue share.",
+  title: "Low set up and generous revenue share.",
   subtitle:
     "Digital Mobile carries the build. Bitexen carries the brand. Revenue is split 50/50 on net profit, after a small loan account covers Digital Mobile's build investment.",
   highlights: [
