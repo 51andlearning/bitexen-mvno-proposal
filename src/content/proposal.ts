@@ -529,7 +529,7 @@ export const vasServices = {
     "Layer VAS on top of the core MVNO to increase ARPU, reduce churn, and create new revenue streams unique to the Bitexen ecosystem.",
   items: [
     { icon: "✈️", title: "eSIM & Travel Roaming", body: "Branded travel eSIM for Bitexen subscribers heading abroad — essential for international traders and crypto conferences.", badges: ["New Revenue", "Differentiation"] },
-    { icon: "🪙", title: "Crypto Rewards & Cashback", body: "Crypto-denominated loyalty points earned on airtime spend, redeemable against trading fees or convertible to fiat. A unique fintech-telecoms flywheel.", badges: ["Retention", "Stickiness"] },
+    { icon: "💰", title: "Crypto Rewards & Cashback", body: "Crypto-denominated loyalty points earned on airtime spend, redeemable against trading fees or convertible to fiat. A unique fintech-telecoms flywheel.", badges: ["Retention", "Stickiness"] },
     { icon: "📊", title: "Bitexen Research Premium", body: "Zero-rated access to institutional-grade market analysis, tokenomics reports, and trading signals — exclusive to subscribers.", badges: ["Differentiation", "Stickiness"] },
     { icon: "📈", title: "Trading Tools Bundle", body: "Advanced charting, API trading access, and automated strategy tools bundled at a discount for Pro and Elite tiers.", badges: ["New Revenue", "Higher Margins"] },
     { icon: "🛡️", title: "Cybersecurity & Identity Protection", body: "Bitdefender mobile security, identity protection, and 2FA tools — critical for crypto traders protecting their assets.", badges: ["New Revenue", "Stickiness"] },
