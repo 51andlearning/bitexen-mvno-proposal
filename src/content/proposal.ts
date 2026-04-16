@@ -3,7 +3,7 @@ export const executiveSummary = {
   title: "A fintech-led MVNO",
   titleHighlight: "unlike anything in Africa.",
   subtitle:
-    "Bitexen operates Turkey's leading cryptocurrency exchange — 2M+ active users, 350+ listed coins, and a fintech technology stack built by Turkish engineers at ITU ARI Teknokent. This MVNO leverages crypto rewards, zero-rated trading, and digital wallet infrastructure to create a differentiated telecoms offering in South Africa.",
+    "Bitexen operates Turkey's leading cryptocurrency exchange — 2M+ active users, 350+ listed coins, and a proven fintech technology stack. This MVNO leverages crypto rewards, zero-rated trading, and digital wallet infrastructure to create a differentiated telecoms offering in South Africa.",
   stats: [
     { value: "$505M", label: "SA MVNO market value (2025)" },
     { value: "$750M", label: "Projected market value by 2030" },
@@ -52,7 +52,7 @@ export const fintechArsenal = {
     },
     {
       title: "Technology Platform",
-      body: "Built by Turkish engineers at ITU ARI Teknokent — proprietary matching engine, API infrastructure, and enterprise-grade security stack.",
+      body: "Proprietary matching engine, API infrastructure, and enterprise-grade security stack — proven at scale across millions of users.",
       stat: "Enterprise-grade",
     },
     {
