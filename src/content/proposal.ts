@@ -586,7 +586,7 @@ export const commercialModel = {
     { item: "Contact centre (CXG)", who: "Digital Mobile", cost: "Managed service" },
     { item: "SIM cards + Paperless RICA", who: "Digital Mobile", cost: "R20 per SIM activation" },
     { item: "Logistics (SIM delivery)", who: "Digital Mobile", cost: "R40 per delivery" },
-    { item: "Bitexen brand + marketing", who: "Bitexen", cost: "R2M in-kind digital media value" },
+    { item: "Bitexen brand + marketing", who: "Bitexen", cost: "Bitexen TBC" },
   ],
 };
 
