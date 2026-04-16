@@ -23,18 +23,18 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
-        <a href="/" className="flex shrink-0 items-end gap-3 text-[#0F172A]">
+        <a href="/" className="flex shrink-0 items-center gap-3 text-[#0F172A]">
           <Image
             src="/images/mvne-logo.png"
             alt="MVNE"
             width={600}
             height={236}
             priority
-            className="mt-[6px] h-8 w-auto"
+            className="h-9 w-auto"
           />
           <span
             aria-hidden
-            className="mb-0.5 hidden h-6 w-px bg-slate-200 sm:block"
+            className="hidden h-8 w-px bg-slate-200 sm:block"
           />
           <Image
             src="/images/dsg-proud-member.png"
@@ -42,7 +42,7 @@ export default function SiteHeader() {
             width={964}
             height={620}
             priority
-            className="hidden h-7 w-auto sm:block"
+            className="hidden h-9 w-auto sm:block"
           />
         </a>
         <ContactDialog
