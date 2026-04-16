@@ -2,11 +2,12 @@ import { deliveryJourney } from "@/content/proposal";
 
 export default function DeliveryJourney() {
   return (
-    <section id="delivery-journey" className="relative overflow-hidden bg-[#0F172A] py-24 text-white md:py-32">
+    <section id="delivery-journey" className="relative overflow-hidden bg-[#0A0E1A] py-24 text-white md:py-32">
       <div
         aria-hidden
-        className="absolute inset-0 opacity-[0.18] [background-image:radial-gradient(circle_at_20%_20%,#0EA5E9_0,transparent_45%),radial-gradient(circle_at_80%_80%,#F59E0B_0,transparent_45%)]"
+        className="absolute inset-0 opacity-[0.22] [background-image:radial-gradient(circle_at_20%_20%,#0EA5E9_0,transparent_45%),radial-gradient(circle_at_80%_80%,#10B981_0,transparent_40%)]"
       />
+      <div aria-hidden className="absolute -right-40 top-0 h-80 w-80 rounded-full bg-[#0EA5E9]/10 blur-[100px]" />
       <div
         aria-hidden
         className="absolute inset-0 opacity-[0.04] [background-image:linear-gradient(rgba(255,255,255,.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.1)_1px,transparent_1px)] [background-size:60px_60px]"

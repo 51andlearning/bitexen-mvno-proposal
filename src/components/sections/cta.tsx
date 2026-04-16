@@ -4,12 +4,13 @@ export default function Cta() {
   return (
     <section
       id="next-steps"
-      className="relative overflow-hidden bg-[#0F172A] text-white"
+      className="relative overflow-hidden bg-[#0A0E1A] text-white"
     >
       <div
         aria-hidden
-        className="absolute inset-0 opacity-[0.12] [background-image:radial-gradient(circle_at_30%_30%,#0EA5E9_0,transparent_50%),radial-gradient(circle_at_75%_80%,#F59E0B_0,transparent_45%)]"
+        className="absolute inset-0 opacity-[0.18] [background-image:radial-gradient(circle_at_30%_30%,#0EA5E9_0,transparent_50%),radial-gradient(circle_at_75%_80%,#10B981_0,transparent_40%)]"
       />
+      <div aria-hidden className="absolute -left-20 bottom-0 h-80 w-80 rounded-full bg-[#10B981]/15 blur-[100px]" />
       <div className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#F59E0B]" />

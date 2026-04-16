@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NAV = [
   { label: "Summary", href: "#executive-summary" },
   { label: "Fintech", href: "#fintech-arsenal" },
@@ -19,9 +21,29 @@ const NAV = [
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
+      {/* Row 1: Branding + CTA */}
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
         <a href="/" className="flex shrink-0 items-center gap-3 text-[#0F172A]">
-          <span className="text-xl font-bold tracking-tight">Bitexen<span className="text-[#0EA5E9]">Mobile</span></span>
+          <Image
+            src="/images/mvne-logo.png"
+            alt="MVNE"
+            width={600}
+            height={236}
+            priority
+            className="h-8 w-auto"
+          />
+          <span
+            aria-hidden
+            className="hidden h-7 w-px bg-slate-200 sm:block"
+          />
+          <Image
+            src="/images/dsg-proud-member.png"
+            alt="Proud member of DSG"
+            width={964}
+            height={620}
+            priority
+            className="hidden h-8 w-auto sm:block"
+          />
         </a>
         <a
           href="mailto:edwardw@mvne.co.za"
@@ -30,6 +52,7 @@ export default function SiteHeader() {
           Get in touch
         </a>
       </div>
+      {/* Row 2: Section nav */}
       <nav className="mx-auto hidden max-w-6xl flex-wrap items-center justify-center gap-x-1 gap-y-0.5 border-t border-slate-100 px-4 py-2 md:flex">
         {NAV.map((n) => (
           <a
