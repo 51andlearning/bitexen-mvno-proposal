@@ -583,7 +583,7 @@ export const commercialModel = {
   costStructure: [
     { item: "MVNO platform deployment", who: "Both", cost: "R250k to Bitexen" },
     { item: "Monthly platform fee", who: "Both", cost: "R75k or R7.50/active sub (higher)" },
-    { item: "Contact centre (CXG)", who: "Both", cost: "Managed service" },
+    { item: "Contact centre (CXG)", who: "Both", cost: "Managed service @ R3.00 per call" },
     { item: "SIM cards + Paperless RICA", who: "Both", cost: "R20 per SIM activation" },
     { item: "Logistics (SIM delivery)", who: "Both", cost: "R40 per delivery" },
     { item: "Bitexen brand + marketing", who: "Bitexen", cost: "Bitexen TBC" },
