@@ -16,7 +16,7 @@ const CAP_BADGE_COLORS: Record<string, string> = {
 
 export default function DsgEcosystem() {
   return (
-    <section id="dsg-ecosystem" className="bg-[#F8FAFC] py-24 md:py-32">
+    <section id="dsg-ecosystem" className="bg-[#F8FAFC] py-14">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#0EA5E9]" />

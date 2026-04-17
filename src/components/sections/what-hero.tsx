@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhatHero() {
   return (
-    <section id="what-hero" className="relative overflow-hidden bg-[#0A0E1A] py-24 text-white md:py-32">
+    <section id="what-hero" className="relative overflow-hidden bg-[#0A0E1A] py-14 text-white">
       <div
         aria-hidden
         className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_10%_80%,#0EA5E9_0,transparent_35%),radial-gradient(circle_at_90%_20%,#10B981_0,transparent_30%),radial-gradient(circle_at_50%_100%,#F59E0B_0,transparent_25%)]"

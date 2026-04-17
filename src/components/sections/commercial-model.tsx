@@ -3,7 +3,7 @@ import SubscriberCalculator from "@/components/subscriber-calculator";
 
 export default function CommercialModel() {
   return (
-    <section id="commercial-model" className="bg-white py-24 md:py-32">
+    <section id="commercial-model" className="bg-white py-14">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#F59E0B]" />

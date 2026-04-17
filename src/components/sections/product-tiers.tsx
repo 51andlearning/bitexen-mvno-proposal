@@ -2,7 +2,7 @@ import { productTiers, topUps } from "@/content/proposal";
 
 export default function ProductTiers() {
   return (
-    <section id="product-tiers" className="bg-[#F8FAFC] py-24 md:py-32">
+    <section id="product-tiers" className="bg-[#F8FAFC] py-14">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         {/* Mobile-Led Bundles */}
         <div className="flex items-center gap-2">

@@ -3,7 +3,7 @@ import { executiveSummary } from "@/content/proposal";
 
 export default function ExecutiveSummary() {
   return (
-    <section id="executive-summary" className="relative overflow-hidden bg-[#0A0E1A] py-24 text-white md:py-32">
+    <section id="executive-summary" className="relative overflow-hidden bg-[#0A0E1A] py-14 text-white">
       {/* Bitexen-inspired gradient mesh */}
       <div
         aria-hidden

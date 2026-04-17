@@ -10,7 +10,7 @@ const SEGMENT_COLORS: Record<string, { bg: string; text: string; border: string 
 
 export default function PropertyMap() {
   return (
-    <section id="property-map" className="bg-[#F8FAFC] py-24 md:py-32">
+    <section id="property-map" className="bg-[#F8FAFC] py-14">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#0EA5E9]" />

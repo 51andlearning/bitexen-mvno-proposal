@@ -2,7 +2,7 @@ import { deliveryJourney } from "@/content/proposal";
 
 export default function DeliveryJourney() {
   return (
-    <section id="delivery-journey" className="relative overflow-hidden bg-[#0A0E1A] py-24 text-white md:py-32">
+    <section id="delivery-journey" className="relative overflow-hidden bg-[#0A0E1A] py-14 text-white">
       <div
         aria-hidden
         className="absolute inset-0 opacity-[0.22] [background-image:radial-gradient(circle_at_20%_20%,#0EA5E9_0,transparent_45%),radial-gradient(circle_at_80%_80%,#10B981_0,transparent_40%)]"

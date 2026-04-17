@@ -27,7 +27,7 @@ const ICON_MAP: Record<string, React.ReactNode> = {
 
 export default function OperatingModel() {
   return (
-    <section id="operating-model" className="bg-white py-24 md:py-32">
+    <section id="operating-model" className="bg-white py-14">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#0EA5E9]" />

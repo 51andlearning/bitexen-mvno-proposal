@@ -32,7 +32,7 @@ const LAYER_ICONS: Record<string, React.ReactNode> = {
 
 export default function RevenueModel() {
   return (
-    <section id="revenue-model" className="relative overflow-hidden bg-[#0A0E1A] py-24 text-white md:py-32">
+    <section id="revenue-model" className="relative overflow-hidden bg-[#0A0E1A] py-14 text-white">
       <div
         aria-hidden
         className="absolute inset-0 opacity-[0.15] [background-image:radial-gradient(circle_at_30%_30%,#0EA5E9_0,transparent_50%),radial-gradient(circle_at_75%_80%,#10B981_0,transparent_40%)]"
