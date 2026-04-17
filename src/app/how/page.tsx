@@ -5,7 +5,6 @@ import DsgEcosystem from "@/components/sections/dsg-ecosystem";
 import DeliveryJourney from "@/components/sections/delivery-journey";
 import PlatformCapabilities from "@/components/sections/platform-capabilities";
 import GtmEnablement from "@/components/sections/gtm-enablement";
-import CommercialModel from "@/components/sections/commercial-model";
 import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
 import Cta from "@/components/sections/cta";
 
@@ -26,7 +25,6 @@ export default function HowPage() {
         <DeliveryJourney />
         <PlatformCapabilities />
         <GtmEnablement />
-        <CommercialModel />
         <ImplementationRoadmap />
         <Cta />
       </main>
