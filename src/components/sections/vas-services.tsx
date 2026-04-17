@@ -1,5 +1,5 @@
 import { vasServices } from "@/content/proposal";
-import CarouselCards from "@/components/carousel-cards";
+import { Icon } from "@/lib/icon-map";
 
 const BADGE_COLORS: Record<string, string> = {
   "New Revenue": "bg-emerald-50 text-emerald-700 border-emerald-200",
@@ -26,36 +26,35 @@ export default function VasServices() {
           {vasServices.subtitle}
         </p>
 
-        <div className="mt-14">
-          <CarouselCards desktopPerView={4}>
-            {vasServices.items.map((item) => (
-              <div
-                key={item.title}
-                data-card
-                className="flex h-full snap-start flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/20 hover:shadow-[0_14px_40px_-20px_rgba(14,165,233,0.2)]"
-              >
-                <div className="mb-4 text-3xl">{item.icon}</div>
-                <h3 className="text-lg font-semibold tracking-tight text-[#0F172A]">
-                  {item.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
-                  {item.body}
-                </p>
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {item.badges.map((badge) => (
-                    <span
-                      key={badge}
-                      className={`inline-flex rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${
-                        BADGE_COLORS[badge] ?? "bg-slate-50 text-slate-600 border-slate-200"
-                      }`}
-                    >
-                      {badge}
-                    </span>
-                  ))}
-                </div>
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {vasServices.items.map((item) => (
+            <div
+              key={item.title}
+              className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/30 hover:shadow-[0_14px_40px_-20px_rgba(14,165,233,0.3)]"
+            >
+              <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#0EA5E9]/15 to-[#10B981]/15 text-[#0EA5E9]">
+                <Icon name={item.icon} className="h-5 w-5" />
               </div>
-            ))}
-          </CarouselCards>
+              <h3 className="text-lg font-semibold tracking-tight text-[#0F172A]">
+                {item.title}
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                {item.body}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {item.badges.map((badge) => (
+                  <span
+                    key={badge}
+                    className={`inline-flex rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${
+                      BADGE_COLORS[badge] ?? "bg-slate-50 text-slate-600 border-slate-200"
+                    }`}
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

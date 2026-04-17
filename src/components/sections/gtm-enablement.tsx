@@ -1,4 +1,5 @@
 import { gtmEnablement } from "@/content/proposal";
+import { Icon } from "@/lib/icon-map";
 
 export default function GtmEnablement() {
   return (
@@ -64,7 +65,9 @@ export default function GtmEnablement() {
                 key={s.title}
                 className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-[#0EA5E9]/20 hover:shadow-[0_14px_40px_-20px_rgba(14,165,233,0.15)]"
               >
-                <div className="text-3xl">{s.icon}</div>
+                <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0EA5E9]/10 text-[#0EA5E9]">
+                  <Icon name={s.icon} className="h-5 w-5" />
+                </div>
                 <div>
                   <h4 className="text-base font-semibold tracking-tight text-[#0F172A]">
                     {s.title}

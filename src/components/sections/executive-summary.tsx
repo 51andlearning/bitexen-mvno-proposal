@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { executiveSummary } from "@/content/proposal";
+import AnimatedStat from "@/components/animated-stat";
+import BitexenWordmark from "@/components/bitexen-wordmark";
 
 export default function ExecutiveSummary() {
   return (
@@ -20,19 +21,11 @@ export default function ExecutiveSummary() {
 
       <div className="relative mx-auto max-w-6xl px-6 md:px-10">
         {/* Brand bar */}
-        <div className="mb-10 flex items-center gap-4">
-          <Image
-            src="/images/bitexen-logo-white.png"
-            alt="Bitexen"
-            width={400}
-            height={100}
-            priority
-            className="h-8 w-auto brightness-110 md:h-10"
-          />
-          <span aria-hidden className="h-8 w-px bg-white/20" />
-          <span className="text-sm font-medium text-slate-400">
-            Fintech MVNO Proposal
-          </span>
+        <div className="mb-10">
+          <BitexenWordmark variant="dark" className="text-3xl md:text-4xl" />
+          <div className="mt-1 text-sm font-medium text-slate-400">
+            The Business Case · Market opportunity & revenue stack
+          </div>
         </div>
 
         <div className="flex items-center gap-2">
@@ -41,12 +34,12 @@ export default function ExecutiveSummary() {
             {executiveSummary.eyebrow}
           </p>
         </div>
-        <h2 className="mt-5 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
+        <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl">
           {executiveSummary.title}{" "}
           <span className="bg-gradient-to-r from-[#0EA5E9] to-[#10B981] bg-clip-text text-transparent">
             {executiveSummary.titleHighlight}
           </span>
-        </h2>
+        </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
           {executiveSummary.subtitle}
         </p>
@@ -59,7 +52,7 @@ export default function ExecutiveSummary() {
               className="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm transition hover:border-[#0EA5E9]/30 hover:bg-white/[0.08]"
             >
               <div className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-                {s.value}
+                <AnimatedStat value={s.value} />
               </div>
               <div className="mt-2 text-sm leading-snug text-slate-400 group-hover:text-slate-300">
                 {s.label}

@@ -7,6 +7,7 @@ import PlatformCapabilities from "@/components/sections/platform-capabilities";
 import GtmEnablement from "@/components/sections/gtm-enablement";
 import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
 import Cta from "@/components/sections/cta";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata = {
   title: "Bitexen Fintech MVNO — How",
@@ -28,6 +29,7 @@ export default function HowPage() {
         <ImplementationRoadmap />
         <Cta />
       </main>
+      <SiteFooter />
     </>
   );
 }

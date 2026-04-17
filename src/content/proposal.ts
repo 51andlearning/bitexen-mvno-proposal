@@ -450,20 +450,20 @@ export const platformCapabilities = {
   subtitle:
     "Digital Mobile's MVNE platform is a proven, production-grade stack. 14 core capability areas, all API-first, all compliant, all live on other MVNOs today.",
   capabilities: [
-    { icon: "📱", title: "SIM Lifecycle & Provisioning", description: "Bulk/individual provisioning, eSIM + physical, swap/replace/block/port, stock management, multi-channel distribution." },
-    { icon: "👤", title: "Account Management", description: "Self-service onboarding, multi-SIM linkage, account hierarchies (family/business), delegated admin." },
-    { icon: "📦", title: "Product & Bundle Management", description: "Fully configurable product catalogue, custom validity, dynamic pricing, loyalty integration." },
-    { icon: "💳", title: "Activity & Recharge", description: "Real-time balance, auto-renewal, multi-channel recharge (retail/USSD/app/web), Bitexen payment integration." },
-    { icon: "🔔", title: "Event & Notification", description: "Real-time SMS/email/push notifications, custom events, CRM and marketing system integration." },
-    { icon: "🎁", title: "VAS Platform", description: "SMS/MMS, voicemail, OTA device mgmt, WASP gateway, USSD, WhatsApp, airtime advance, loyalty." },
-    { icon: "💰", title: "Billing & Finance", description: "Converged prepaid/postpaid/subscription, automated invoicing, revenue assurance via MARS." },
-    { icon: "⚖️", title: "Regulatory & Compliance", description: "Full RICA/eRICA, number portability, lawful intercept, ICASA and POPIA compliance, full audit trails." },
-    { icon: "📊", title: "CRM & Campaigns", description: "Xanite CVM engine, PersAIc AI targeting, segmentation, campaign management, journey orchestration." },
-    { icon: "🖥️", title: "OSS / BSS", description: "Real-time OCS, NOC with SLA management, Enterprise Product Catalogue, provisioning, performance dashboards." },
-    { icon: "🛟", title: "Support & Service Desk", description: "24/7 multi-level support via CXG, dispute management, self-service (USSD/app/web), knowledge base." },
-    { icon: "🌐", title: "Portal Management", description: "Secure role-based admin portals, real-time dashboards, mobile-responsive, white-labelled to Bitexen brand." },
-    { icon: "🔗", title: "Integration & APIs", description: "API-first architecture, iPaaS integration platform, PCI-compliant payment flows, open APIs for every service." },
-    { icon: "🛡️", title: "Security & Resilience", description: "Geo-redundant infrastructure, disaster recovery, regular failover testing, ISO compliance in progress." },
+    { icon: "smartphone", title: "SIM Lifecycle & Provisioning", description: "Bulk/individual provisioning, eSIM + physical, swap/replace/block/port, stock management, multi-channel distribution." },
+    { icon: "user-circle", title: "Account Management", description: "Self-service onboarding, multi-SIM linkage, account hierarchies (family/business), delegated admin." },
+    { icon: "package", title: "Product & Bundle Management", description: "Fully configurable product catalogue, custom validity, dynamic pricing, loyalty integration." },
+    { icon: "credit-card", title: "Activity & Recharge", description: "Real-time balance, auto-renewal, multi-channel recharge (retail/USSD/app/web), Bitexen payment integration." },
+    { icon: "bell", title: "Event & Notification", description: "Real-time SMS/email/push notifications, custom events, CRM and marketing system integration." },
+    { icon: "gift", title: "VAS Platform", description: "SMS/MMS, voicemail, OTA device mgmt, WASP gateway, USSD, WhatsApp, airtime advance, loyalty." },
+    { icon: "wallet", title: "Billing & Finance", description: "Converged prepaid/postpaid/subscription, automated invoicing, revenue assurance via MARS." },
+    { icon: "scale", title: "Regulatory & Compliance", description: "Full RICA/eRICA, number portability, lawful intercept, ICASA and POPIA compliance, full audit trails." },
+    { icon: "target", title: "CRM & Campaigns", description: "Xanite CVM engine, PersAIc AI targeting, segmentation, campaign management, journey orchestration." },
+    { icon: "server", title: "OSS / BSS", description: "Real-time OCS, NOC with SLA management, Enterprise Product Catalogue, provisioning, performance dashboards." },
+    { icon: "life-buoy", title: "Support & Service Desk", description: "24/7 multi-level support via CXG, dispute management, self-service (USSD/app/web), knowledge base." },
+    { icon: "globe", title: "Portal Management", description: "Secure role-based admin portals, real-time dashboards, mobile-responsive, white-labelled to Bitexen brand." },
+    { icon: "plug", title: "Integration & APIs", description: "API-first architecture, iPaaS integration platform, PCI-compliant payment flows, open APIs for every service." },
+    { icon: "shield-check", title: "Security & Resilience", description: "Geo-redundant infrastructure, disaster recovery, regular failover testing, ISO compliance in progress." },
   ],
 };
 
@@ -515,10 +515,10 @@ export const gtmEnablement = {
     },
   ],
   supportingServices: [
-    { icon: "📦", title: "Supply Chain & 4PL (Ufreight)", description: "Since 1998, DSG has run 4PL supply chain for major SA brands. Device sourcing, bonded warehousing, last-mile delivery, and full RICA closed-loop compliance." },
-    { icon: "🔐", title: "Identity Management (Optional.me)", description: "Partnership with TransUnion and Contactable (the RICA platform MTN uses). Rapid digital onboarding, consent management, and POPIA-compliant permission marketing." },
-    { icon: "🛒", title: "Omni-Channel Commerce (DigitalMall)", description: "Full omni-channel commerce solution — device financing, airtime top-up, VAS upsell, and loyalty redemption in one storefront." },
-    { icon: "🤖", title: "AI Marketing (PersAIc + Xanite)", description: "AI-powered persona targeting, dynamic creative optimisation, and full CVM engine — campaigns, journeys, segmentation, and personalisation at scale." },
+    { icon: "truck", title: "Supply Chain & 4PL (Ufreight)", description: "Since 1998, DSG has run 4PL supply chain for major SA brands. Device sourcing, bonded warehousing, last-mile delivery, and full RICA closed-loop compliance." },
+    { icon: "fingerprint", title: "Identity Management (Optional.me)", description: "Partnership with TransUnion and Contactable (the RICA platform MTN uses). Rapid digital onboarding, consent management, and POPIA-compliant permission marketing." },
+    { icon: "shopping-cart", title: "Omni-Channel Commerce (DigitalMall)", description: "Full omni-channel commerce solution — device financing, airtime top-up, VAS upsell, and loyalty redemption in one storefront." },
+    { icon: "sparkles", title: "AI Marketing (PersAIc + Xanite)", description: "AI-powered persona targeting, dynamic creative optimisation, and full CVM engine — campaigns, journeys, segmentation, and personalisation at scale." },
   ],
 };
 
@@ -528,14 +528,14 @@ export const vasServices = {
   subtitle:
     "Layer VAS on top of the core MVNO to increase ARPU, reduce churn, and create new revenue streams unique to the Bitexen ecosystem.",
   items: [
-    { icon: "✈️", title: "eSIM & Travel Roaming", body: "Branded travel eSIM for Bitexen subscribers heading abroad — essential for international traders and crypto conferences.", badges: ["New Revenue", "Differentiation"] },
-    { icon: "💰", title: "Crypto Rewards & Cashback", body: "Crypto-denominated loyalty points earned on airtime spend, redeemable against trading fees or convertible to fiat. A unique fintech-telecoms flywheel.", badges: ["Retention", "Stickiness"] },
-    { icon: "📊", title: "Bitexen Research Premium", body: "Zero-rated access to institutional-grade market analysis, tokenomics reports, and trading signals — exclusive to subscribers.", badges: ["Differentiation", "Stickiness"] },
-    { icon: "📈", title: "Trading Tools Bundle", body: "Advanced charting, API trading access, and automated strategy tools bundled at a discount for Pro and Elite tiers.", badges: ["New Revenue", "Higher Margins"] },
-    { icon: "🛡️", title: "Cybersecurity & Identity Protection", body: "Bitdefender mobile security, identity protection, and 2FA tools — critical for crypto traders protecting their assets.", badges: ["New Revenue", "Stickiness"] },
-    { icon: "🔐", title: "Crypto Insurance", body: "Micro-insurance products protecting subscribers against exchange hacks, identity theft, and online fraud.", badges: ["New Revenue", "Higher Margins"] },
-    { icon: "🎓", title: "Learn-and-Earn Education", body: "Complete crypto courses, earn airtime or trading credits. Drives engagement, builds financial literacy, and reduces churn.", badges: ["Retention", "Differentiation"] },
-    { icon: "💼", title: "SME & Merchant Tools", body: "Crypto payment gateway, point-of-sale tools, and business productivity suite for merchant-segment subscribers.", badges: ["New Revenue", "Higher Margins"] },
+    { icon: "plane", title: "eSIM & Travel Roaming", body: "Branded travel eSIM for Bitexen subscribers heading abroad — essential for international traders and crypto conferences.", badges: ["New Revenue", "Differentiation"] },
+    { icon: "coins", title: "Crypto Rewards & Cashback", body: "Crypto-denominated loyalty points earned on airtime spend, redeemable against trading fees or convertible to fiat. A unique fintech-telecoms flywheel.", badges: ["Retention", "Stickiness"] },
+    { icon: "bar-chart", title: "Bitexen Research Premium", body: "Zero-rated access to institutional-grade market analysis, tokenomics reports, and trading signals — exclusive to subscribers.", badges: ["Differentiation", "Stickiness"] },
+    { icon: "trending-up", title: "Trading Tools Bundle", body: "Advanced charting, API trading access, and automated strategy tools bundled at a discount for Pro and Elite tiers.", badges: ["New Revenue", "Higher Margins"] },
+    { icon: "shield", title: "Cybersecurity & Identity Protection", body: "Bitdefender mobile security, identity protection, and 2FA tools — critical for crypto traders protecting their assets.", badges: ["New Revenue", "Stickiness"] },
+    { icon: "lock", title: "Crypto Insurance", body: "Micro-insurance products protecting subscribers against exchange hacks, identity theft, and online fraud.", badges: ["New Revenue", "Higher Margins"] },
+    { icon: "graduation-cap", title: "Learn-and-Earn Education", body: "Complete crypto courses, earn airtime or trading credits. Drives engagement, builds financial literacy, and reduces churn.", badges: ["Retention", "Differentiation"] },
+    { icon: "briefcase", title: "SME & Merchant Tools", body: "Crypto payment gateway, point-of-sale tools, and business productivity suite for merchant-segment subscribers.", badges: ["New Revenue", "Higher Margins"] },
   ],
 };
 

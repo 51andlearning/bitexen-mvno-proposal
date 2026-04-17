@@ -1,5 +1,6 @@
 import { commercialModel } from "@/content/proposal";
 import SubscriberCalculator from "@/components/subscriber-calculator";
+import PnLChart from "@/components/pnl-chart";
 
 export default function CommercialModel() {
   return (
@@ -152,6 +153,9 @@ export default function CommercialModel() {
           <span className="font-semibold text-slate-700">Note:</span>{" "}
           {commercialModel.profitAndLoss.note}
         </p>
+
+        {/* 5-Year visual chart */}
+        <PnLChart />
 
         {/* 5-Year Annualised P&L */}
         <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white">

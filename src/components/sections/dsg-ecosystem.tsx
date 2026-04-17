@@ -1,5 +1,4 @@
 import { dsgEcosystem } from "@/content/proposal";
-import CarouselCards from "@/components/carousel-cards";
 
 const CAP_BADGE_COLORS: Record<string, string> = {
   Telecoms: "bg-blue-50 text-blue-700 border-blue-200",
@@ -32,18 +31,17 @@ export default function DsgEcosystem() {
         </p>
 
         {/* DSG Capabilities */}
-        <div className="mt-14">
+        <div className="mt-12">
           <h3 className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
             DSG Group Capabilities
           </h3>
-          <CarouselCards desktopPerView={3}>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {dsgEcosystem.capabilities.map((cap) => (
               <div
                 key={cap.name}
-                data-card
-                className="flex h-full snap-start flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/20 hover:shadow-[0_14px_40px_-20px_rgba(14,165,233,0.2)]"
+                className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/20 hover:shadow-[0_14px_40px_-20px_rgba(14,165,233,0.2)]"
               >
-                <h3 className="text-xl font-semibold tracking-tight text-[#0F172A]">
+                <h3 className="text-lg font-semibold tracking-tight text-[#0F172A]">
                   {cap.name}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
@@ -63,30 +61,29 @@ export default function DsgEcosystem() {
                 </div>
               </div>
             ))}
-          </CarouselCards>
+          </div>
         </div>
 
         {/* Technology Partners */}
-        <div className="mt-16">
+        <div className="mt-12">
           <h3 className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
             Technology Partners
           </h3>
-          <CarouselCards desktopPerView={3}>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {dsgEcosystem.partners.map((partner) => (
               <div
                 key={partner.name}
-                data-card
-                className="flex h-full snap-start flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/20 hover:shadow-[0_14px_40px_-20px_rgba(14,165,233,0.2)]"
+                className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/20"
               >
-                <h3 className="text-xl font-semibold tracking-tight text-[#0F172A]">
+                <h3 className="text-base font-semibold tracking-tight text-[#0F172A]">
                   {partner.name}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+                <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-600">
                   {partner.description}
                 </p>
               </div>
             ))}
-          </CarouselCards>
+          </div>
         </div>
       </div>
     </section>

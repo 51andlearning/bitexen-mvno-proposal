@@ -6,6 +6,7 @@ import VasServices from "@/components/sections/vas-services";
 import PropertyMap from "@/components/sections/property-map";
 import FintechArsenal from "@/components/sections/fintech-arsenal";
 import PageNav from "@/components/page-nav";
+import SiteFooter from "@/components/site-footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <VasServices />
         <PageNav current="what" />
       </main>
+      <SiteFooter />
     </>
   );
 }

@@ -3,6 +3,7 @@ import ExecutiveSummary from "@/components/sections/executive-summary";
 import RevenueModel from "@/components/sections/revenue-model";
 import CommercialModel from "@/components/sections/commercial-model";
 import PageNav from "@/components/page-nav";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata = {
   title: "Bitexen Fintech MVNO — Business Case",
@@ -20,6 +21,7 @@ export default function WhyPage() {
         <CommercialModel />
         <PageNav current="why" />
       </main>
+      <SiteFooter />
     </>
   );
 }
