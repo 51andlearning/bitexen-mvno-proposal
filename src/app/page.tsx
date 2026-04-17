@@ -14,9 +14,9 @@ export default function Home() {
       <main className="flex flex-1 flex-col">
         {/* WHAT — the proposed MVNO */}
         <WhatHero />
+        <PropertyMap />
         <ProductTiers />
         <CryptoRewards />
-        <PropertyMap />
         <FintechArsenal />
         <VasServices />
         <PageNav current="what" />
