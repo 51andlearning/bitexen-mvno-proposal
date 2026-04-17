@@ -14,21 +14,21 @@ export default function SiteFooter() {
               Fintech MVNO proposal prepared for Bitexen Teknoloji A.S. by the
               MVNE team at Digital Solutions Group.
             </p>
-            <div className="mt-6 flex items-center gap-4">
+            <div className="mt-6 inline-flex items-center gap-4 rounded-lg bg-white px-4 py-2.5">
               <Image
                 src="/images/mvne-logo.png"
                 alt="MVNE"
                 width={600}
                 height={236}
-                className="h-7 w-auto brightness-0 invert opacity-80"
+                className="h-7 w-auto"
               />
-              <span aria-hidden className="h-6 w-px bg-white/10" />
+              <span aria-hidden className="h-6 w-px bg-slate-200" />
               <Image
                 src="/images/dsg-proud-member.png"
-                alt="DSG"
+                alt="Proud member of DSG"
                 width={964}
                 height={620}
-                className="h-7 w-auto brightness-0 invert opacity-80"
+                className="h-7 w-auto"
               />
             </div>
           </div>
