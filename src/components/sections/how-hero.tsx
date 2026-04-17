@@ -32,7 +32,7 @@ export default function HowHero() {
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#F59E0B]" />
           <p className="text-xs font-medium uppercase tracking-[0.24em] text-[#F59E0B]">
-            How We Deliver
+            Execution
           </p>
         </div>
         <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">

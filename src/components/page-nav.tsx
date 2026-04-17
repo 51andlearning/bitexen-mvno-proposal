@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const PAGES = [
-  { key: "what", label: "What", sub: "The proposed MVNO", href: "/" },
-  { key: "why", label: "Why", sub: "The rationale", href: "/why" },
-  { key: "how", label: "How", sub: "Delivery & commercials", href: "/how" },
+  { key: "what", label: "Proposition", sub: "The proposed MVNO", href: "/" },
+  { key: "why", label: "Business Case", sub: "The rationale", href: "/why" },
+  { key: "how", label: "Execution", sub: "Delivery & commercials", href: "/how" },
 ];
 
 export default function PageNav({ current }: { current: "what" | "why" | "how" }) {

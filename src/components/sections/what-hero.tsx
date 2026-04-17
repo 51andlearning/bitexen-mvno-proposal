@@ -26,14 +26,14 @@ export default function WhatHero() {
           />
           <span aria-hidden className="h-8 w-px bg-white/20" />
           <span className="text-sm font-medium text-slate-400">
-            The Proposed MVNO
+            The Proposition
           </span>
         </div>
 
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#10B981]" />
           <p className="text-xs font-medium uppercase tracking-[0.24em] text-[#10B981]">
-            What We&apos;re Building
+            Proposition
           </p>
         </div>
         <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">

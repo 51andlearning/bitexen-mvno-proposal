@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 import ContactDialog from "@/components/contact-dialog";
 
 const PAGES = [
-  { label: "What", sub: "The proposed MVNO", href: "/" },
-  { label: "Why", sub: "The rationale", href: "/why" },
-  { label: "How", sub: "Delivery & commercials", href: "/how" },
+  { label: "Proposition", sub: "The proposed MVNO", href: "/" },
+  { label: "Business Case", sub: "The rationale", href: "/why" },
+  { label: "Execution", sub: "Delivery & commercials", href: "/how" },
 ];
 
 export default function SiteHeader() {
